@@ -383,7 +383,7 @@ app.get('/messages/:messageId', function(req, res) {
 
 
 var runServer = function(callback) {
-    var databaseUri = process.env.DATABASE_URI || global.databaseUri || 'mongodb://localhost/auth';
+    var databaseUri = process.env.DATABASE_URI || global.databaseUri || 'mongodb://travis:traviscid@ds161505.mlab.com:61505/sup-travisci';
     mongoose.connect(databaseUri).then(function() {
         User.find(function(err, users) {
             console.log('users : ', users);
