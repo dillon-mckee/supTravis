@@ -1,4 +1,4 @@
-global.databaseUri = 'ongodb://travis:traviscid@ds161505.mlab.com:61505/sup-travisci';
+global.databaseUri = 'mongodb://travis:traviscid@ds161505.mlab.com:61505/sup-travisci';
 
 var chai = require('chai');
 var chaiHttp = require('chai-http');
