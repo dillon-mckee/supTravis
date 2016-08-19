@@ -78,7 +78,6 @@ app.get('/users', passport.authenticate('basic', {session: false}), function(req
     });
 });
 
-
 app.get('/users/:userId', function(req, res) {
     User.findById({
         _id: req.params.userId
